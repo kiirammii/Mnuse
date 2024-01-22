@@ -1,0 +1,128 @@
+@font-face {
+    font-family: Josefin Sans Light;
+    src: url(../assets/josefin-sans/JosefinSans-Light.ttf);
+}
+
+@font-face {
+    font-family: Josefin Sans SemiBold;
+    src: url(../assets/josefin-sans/JosefinSans-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Josefin Sans Regular;
+    src: url(../assets/josefin-sans/JosefinSans-Regular.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.img {
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+    height: 50em;
+    width: 100%;
+}
+  
+.overlay {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50em;
+    background-color: #18234d;
+    opacity: 0.8;
+}
+  
+
+#title{
+    font-family: Josefin Sans Light;
+    color: #EEEAF5;
+}
+
+#bodyText{
+    font-family: Josefin Sans Regular;
+    font-size: 1.8em;
+    color: #EEEAF5;
+    display: flex;
+    flex-direction: column;
+}
+
+#middleWebsite{
+    text-align: center;
+    flex: 1;
+    height: 38em;
+}
+
+#middleWebsite input[type="button"]{
+    font-family: Josefin Sans Light;
+    background-color: #EEEAF5;
+    border: 0;
+    border-radius: 15px;
+    color: #18234D;
+    height: 3em;
+    width: 9em;
+}
+
+#middleWebsite input[type="button"]:hover{
+    cursor: pointer;
+} 
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    #title{
+        margin-bottom: 0.9em;
+        margin-top: 1em;
+        font-size: 4.6em;
+    }
+
+    #bodyText{
+        margin-bottom: 1em;
+        font-size: 2em;
+    }
+
+    #middleWebsite input[type="button"]{
+        font-size: 1.8em;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #title{
+        margin-bottom: 0.6em;
+        margin-top: 0.6em;
+        font-size: 3.8em;
+    }
+
+    #bodyText{
+        margin-bottom: 1em;
+        font-size: 1.8em;
+    }
+
+    #middleWebsite input[type="button"]{
+        font-size: 1.6em;
+        margin-bottom: 1.4em;
+    }
+
+    #middleWebsite{
+        height: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+    #title{
+        margin-bottom: 1em;
+        margin-top: 0.8em;
+        font-size: 5em;
+    }
+
+    #bodyText{
+        margin-bottom: 1.8em;
+    }
+
+    #middleWebsite input[type="button"]{
+        font-size: 1.4em;
+    }
+}

@@ -1,0 +1,108 @@
+@font-face {
+    font-family: Josefin Sans Light;
+    src: url(../assets/josefin-sans/JosefinSans-Light.ttf);
+}
+
+@font-face {
+    font-family: Josefin Sans SemiBold;
+    src: url(../assets/josefin-sans/JosefinSans-SemiBold.ttf);
+}
+
+body{
+    background-color: #18234d !important;
+    margin: 0;
+    padding: 0;
+}
+
+#middleWebsite {
+    color: #EEEAF5;
+    font-family: Josefin Sans Regular;
+    margin: 1.6em 0 0 0;
+    height: 77vh;
+}
+
+#top3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-right: 20em;
+    padding-left: 20em;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    width: 6em;
+    margin-left: 1em;
+}
+
+#number2, #number3{
+    margin-top: 4em;
+}
+
+#position1, #position2, #position3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center; 
+    justify-content: center;
+    width: 6em;
+} 
+
+#top3 > div {
+    margin-bottom: 0.5em;
+}
+
+h2{
+    color: #732AD9;
+    font-family: Josefin Sans SemiBold;
+    font-size: 40px !important;
+}
+
+h1{
+    margin-bottom: 1.5em !important;
+    margin-left: -12%;
+}
+
+.avatars{
+    border-radius: 50%;
+}
+
+span{
+    color: #732AD9;
+}
+
+#middleWebsite{
+    padding-right: 2em;
+    padding-left: 7.5em;
+    height: 30em;
+    margin-bottom: 4em;
+}
+
+p{
+    text-align: center;
+}
+
+.numbers {
+    display: grid;
+    place-items: center;
+}
+
+#playersPlace{
+    margin-top: 4%;
+}
+
+#info1, #info2, #info3{
+    margin-left: 3em;
+    margin-top: 1em;
+    text-align: center;
+    padding-right: 7em;
+    padding-left: 7em;
+}
+
+@media only screen and (max-width: 767px) {
+    #middleWebsite{
+        padding-right: 2em;
+        padding-left: 2em;
+        height: 100%;
+        margin-bottom: 4em;
+    }
+}

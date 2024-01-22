@@ -1,0 +1,92 @@
+.board {
+  border-radius: 15px;
+  width: 100%;
+} 
+
+#background {
+  position: relative;
+}
+
+.overlayNumbers{
+  position: absolute;
+  top: 4em;
+  left: 0;
+  z-index: 1;
+}
+
+.overlayShapes{
+  position: absolute;
+  top: 24em;
+  z-index: 1;
+}
+
+body{
+  background-color: #18234d !important;
+}
+
+#one {
+  margin-bottom:1em;
+}
+
+#three {
+  margin-bottom:1em;
+  margin-left: 3em;
+}
+
+#four {
+  margin-bottom:1em;
+}
+
+#shapes{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 12em;
+}
+
+.draggableElements {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;    
+}
+
+.draggable {
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px;
+  margin-top: 2.4em;
+  font-size: 4rem;
+  cursor: grabbing;
+  transition: opacity 0.2s;
+}
+
+.draggable:hover {
+  opacity: 0.5;
+  cursor:grab;
+}
+
+.droppable {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10em;
+}
+
+.droppable img {
+  height: 100px;
+  width: 100px;
+}
+
+.droppable-hover {
+  border-width: 3px;
+}
+
+.dropped {
+  background-image: none;
+}
